@@ -1,14 +1,11 @@
-DROP TABLE IF EXISTS #Input
 DROP TABLE IF EXISTS [input2024].[Day4]
 DROP TABLE IF EXISTS [dbo].[FoundWords]
 
 DECLARE @BulkColumn VARCHAR(max)
-DECLARE @SQL VARCHAR(MAX)
 DECLARE @CharPosition int = 1
 DECLARE @MaxCharLength int
 DECLARE @RowPosition int
 DECLARE @MaxRowPosition int 
-
 
 CREATE TABLE [input2024].[Day4] (
 [RowId] int IDENTITY(1,1) NOT NULL,
